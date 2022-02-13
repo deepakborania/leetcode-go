@@ -1,0 +1,3 @@
+test:
+	@echo "unit test"
+	go test -v ./...
