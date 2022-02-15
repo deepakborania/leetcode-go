@@ -6,7 +6,9 @@ for d in [0-9][0-9][0-9][0-9]*/; do
     echo "Generating links for $d"
 
     IFS='_' read -r -a parts <<< "${d%/}"
-    strpart="| [${parts[0]}](https://leetcode.com/problems/${parts[1]}) |[${parts[1]}]($d)|\n"
+    
+    problem_name=$(echo ${parts[1]} | sed -r "s/-/ /g"| sed -r "s/(^\w)/\U\1/g")
+    strpart="| [${parts[0]}](https://leetcode.com/problems/${parts[1]}) |[$problem_name]($d)|\n"
     # echo $strpart
     result=$result$strpart
 done
