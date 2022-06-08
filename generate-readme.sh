@@ -1,7 +1,7 @@
 #!/bin/bash
 NL=$'\n'
 
-result="Leetcode solutions in Go lang\n\n| |Problem|\n|:---:|:---|\n"
+result="Leetcode solutions in Golang\n\n| |Problem|\n|:---:|:---|\n"
 for d in [0-9][0-9][0-9][0-9]*/; do
     echo "Generating links for $d"
 
