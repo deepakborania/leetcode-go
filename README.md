@@ -1,4 +1,4 @@
-Leetcode solutions in Go lang
+Leetcode solutions in Golang
 
 | |Problem|
 |:---:|:---|
